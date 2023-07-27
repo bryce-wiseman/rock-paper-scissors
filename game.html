@@ -6,25 +6,42 @@
     </head>
 
     <body>
+        <h1>Let's Play a Game</h1>
+        <p>A classic game of Rock, Paper, Scissors</p>
+        <p>Think you can beat the computer?</p>
+        <input type="text" id="playerAnswer" name="playerAnswer" required>
+        <button type="button" onclick="getPlayerChoice();">Submit</button>
+
         <script>
             let percent = Math.random() * 100 + 1
             let rounded = Math.round(percent)
 
             function getComputerChoice() {
-                let result;
+                let computerSelection;
                 if (rounded >= 34 && rounded < 67) {
-                    return result = "rock"
+                    return computerSelection = "rock"
                 } else if (rounded < 34) {
-                    return result = "scissors"
+                    return computerSelection = "scissors"
                 } else {
-                    return result = "paper"
+                    return computerSelection = "paper"
                 }
-            }
-            
+            } 
 
+            function getPlayerChoice() {
+                let playerChoice = document.getElementById("playerAnswer").value;
+
+                console.log(playerChoice);
+            }
+
+
+            
             console.log(rounded)
             console.log(getComputerChoice())
+            
+            
 
+
+            
 
         </script>
     </body>
