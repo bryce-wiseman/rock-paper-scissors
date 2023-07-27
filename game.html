@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Rochambeau!</title>
+    </head>
+
+    <body>
+        <script>
+            let percent = Math.random() * 100 + 1
+            let rounded = Math.round(percent)
+
+            function getComputerChoice() {
+                let result;
+                if (rounded >= 34 && rounded < 67) {
+                    return result = "rock"
+                } else if (rounded < 34) {
+                    return result = "scissors"
+                } else {
+                    return result = "paper"
+                }
+            }
+            
+
+            console.log(rounded)
+            console.log(getComputerChoice())
+
+
+        </script>
+    </body>
+</html>
