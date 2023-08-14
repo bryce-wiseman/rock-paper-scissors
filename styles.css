@@ -1,0 +1,101 @@
+body {
+    font-family: Silkscreen;
+    font-weight: 400;
+    text-shadow: 3px 3px 8px #000000;
+    color: #eee;
+
+    background-image: url("pixel-camp.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #5a3a7d;
+    height: 90vh;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text {
+    font-size: 24px;
+    width: 70%;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#dialogue {
+    padding: 10px;
+    background-color: #000000cc;
+    border: dashed goldenrod 4px;
+    border-radius: 15px;
+}
+
+#challenge {
+    padding: 10px;
+    background-color: #000000cc;
+    border: dashed goldenrod 4px;
+    border-radius: 15px;
+    width: fit-content;
+}
+
+h1 {
+    font-family: Silkscreen;
+    font-weight: 700;
+    font-size: 48px;
+    color: #eee;
+}
+
+.choosing {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+.player-choice {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #cccccc;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    width: 80%;
+}
+
+.choice {
+    background-color: #00000099;
+    border-radius: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    height: 20%;
+}
+.choice img {
+    width: 80%;
+    height: 80%;
+    filter: drop-shadow(8px 8px 5px #000000);
+    margin: 0;
+}
+
+.choice button {
+    background-color: #00000000;
+    border: none;
+    border-radius: 10%;
+}
+
+.choice button:hover {
+    transform: scale(110%);
+    transition: 1s ease-in-out;
+}
+
+.choice p {
+    font-size: 20px;
+    margin: 0 0 10px 0;
+}

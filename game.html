@@ -2,47 +2,38 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Rochambeau!</title>
+        <title>Let's Play!</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Silkscreen">
+        <link rel="stylesheet" href="styles.css">
     </head>
 
     <body>
-        <h1>Let's Play a Game</h1>
-        <p>A classic game of Rock, Paper, Scissors</p>
-        <p>Think you can beat the computer?</p>
-        <input type="text" id="playerAnswer" name="playerAnswer" required>
-        <button type="button" onclick="getPlayerChoice();">Submit</button>
-
-        <script>
-            let percent = Math.random() * 100 + 1
-            let rounded = Math.round(percent)
-
-            function getComputerChoice() {
-                let computerSelection;
-                if (rounded >= 34 && rounded < 67) {
-                    return computerSelection = "rock"
-                } else if (rounded < 34) {
-                    return computerSelection = "scissors"
-                } else {
-                    return computerSelection = "paper"
-                }
-            } 
-
-            function getPlayerChoice() {
-                let playerChoice = document.getElementById("playerAnswer").value;
-
-                console.log(playerChoice);
-            }
-
-
-            
-            console.log(rounded)
-            console.log(getComputerChoice())
-            
-            
-
-
-            
-
-        </script>
+        <div class="text">
+            <h1 class="bold">Howdy there...</h1>
+            <p id="dialogue">It's been another great day camping out here. Before you go to bed you wanna play a little bit of Rock, Paper, Scissors?</p>
+            <p id="challenge">Best out of 5.</p>
+        </div>
+        <div class="choosing">
+            <div class="player-choice">
+                <div class="choice">
+                    <button class="submit" value="rock">
+                        <img src="rock.png">
+                    </button>
+                    <p>ROCK</p>
+                </div>
+                <div class="choice">
+                    <button class="submit" value="paper">
+                        <img src="paper.png">
+                    </button>
+                    <p>PAPER</p>
+                </div>
+                <div class="choice">
+                    <button class="submit" value="scissors">
+                        <img src="scissor.png">
+                    </button>
+                    <p>SCISSORS</p>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
