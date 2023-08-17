@@ -1,6 +1,7 @@
 body {
     font-family: Silkscreen;
     font-weight: 400;
+    font-size: 20px;
     text-shadow: 3px 3px 8px #000000;
     color: #eee;
 
@@ -12,12 +13,11 @@ body {
     
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 }
 
 .text {
-    font-size: 24px;
     width: 70%;
     text-align: center;
 
@@ -25,68 +25,60 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-#dialogue {
-    padding: 10px;
-    background-color: #000000cc;
-    border: dashed goldenrod 4px;
-    border-radius: 15px;
-}
-
-#challenge {
-    padding: 10px;
-    background-color: #000000cc;
-    border: dashed goldenrod 4px;
-    border-radius: 15px;
-    width: fit-content;
+    margin: 20px 0;
 }
 
 h1 {
     font-family: Silkscreen;
     font-weight: 700;
-    font-size: 48px;
+    font-size: 40px;
     color: #eee;
+
+    margin: 10px 0;
 }
 
-.choosing {
+.textbox {
+    padding: 10px;
+    background-color: #000000cc;
+    border: dashed goldenrod 4px;
+    border-radius: 15px;
+    margin: 10px 0;
+}
+
+#challenge {
+    width: fit-content;
+}
+
+#scores {
     display: flex;
-    justify-content: center;
+    width: 50%;
+    justify-content: space-around;
     align-items: center;
+    margin: 20px 0px;
     height: auto;
 }
 
-.player-choice {
+.player-options {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    color: #cccccc;
     font-size: 18px;
     margin: 0;
     padding: 0;
     width: 80%;
 }
 
-.choice {
-    background-color: #00000099;
+.player-options input {
+    background-color: #000000aa;
     border-radius: 20%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 25%;
-    height: 20%;
-}
-.choice img {
-    width: 80%;
-    height: 80%;
-    filter: drop-shadow(8px 8px 5px #000000);
-    margin: 0;
+    width: 20%;
+    height: auto;
+    
 }
 
 .choice button {
     background-color: #00000000;
-    border: none;
+    border: solid pink 4px;
     border-radius: 10%;
 }
 
@@ -95,7 +87,32 @@ h1 {
     transition: 1s ease-in-out;
 }
 
+
+
 .choice p {
     font-size: 20px;
     margin: 0 0 10px 0;
+}
+
+#round-result {
+    height: 30px;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+}
+
+#play-again {
+    background-color: #cccccc;
+    border: #000000 dashed 3px;
+    border-radius: 15px;
+    font-family: Silkscreen;
+    margin: 20px 0;
+    font-size: 18px;
+    padding: 5px 10px;
+}
+
+#play-again:hover {
+    background-color: #332147;
+    border-color: #cccccc;
+    color: #cccccc;
 }
